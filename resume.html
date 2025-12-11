@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Resume</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body id="resume-body">
+        <!-- Navigation bar -->
+        <div class="navigation-bar">
+            <a href="index.html">
+                <button id="logo-button" type="button">
+                    <span>Liam Oscaris</span>
+                </button>
+            </a>
+
+            <div class="redirects">
+                <a href="index.html">
+                    <button class="redirect-button" type="button">
+                        <span>Home</span>
+                    </button>
+                </a>
+                
+                <a href="about.html">
+                    <button class="redirect-button" type="button">
+                        <span>About</span>
+                    </button>
+                </a>
+                
+                <a href="projects.html">
+                    <button class="redirect-button" type="button">
+                        <span>Projects</span>
+                    </button>
+                </a>
+
+                <a href="resume.html">
+                    <button class="redirect-button selected-2" type="button">
+                        <span>Resume</span>
+                    </button>
+                </a>
+                
+                <a href="contact.html" id="contact-button">
+                    <button class="redirect-button contact" type="button">
+                        <span>Contact</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="resume">
+            <h1>Resume</h1>
+
+            <!-- Download resume button -->
+            <div id="download">
+                <button type="button">
+                    <span>Download Resume</span>
+                </button>
+            </div>
+
+            <!-- Resume shelf with each section appearing as a book -->
+            <div id="resume-shelf">
+                <div id="resume-inner">
+                    <button class="resume-section-book" id="education" type="button" onclick="openSection('education')">
+                        <span>Education</span>
+                    </button>
+                    
+                    <button class="resume-section-book" id="experience" type="button" onclick="openSection('experience')">
+                        <span>Experience</span>
+                    </button>
+
+                    <button class="resume-section-book" id="awards" type="button" onclick="openSection('awards')">
+                        <span>Awards</span>
+                    </button>
+
+                    <button class="resume-section-book" id="skills" type="button" onclick="openSection('skills')">
+                        <span>Skills</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Close book button (shown only when a book is opened) -->
+            <div id="close-book">
+                <button type="button" onclick="closeSection()">
+                    <span>Close</span>
+                </button>
+            </div>
+
+            <!-- Education section-->
+            <div class="resume-section" id="education">
+                <h2 id="selected-header skills">Education</h2>
+                <div id="book-img">
+                    <div id="selected-info">
+                        <div id="selected-info-p1"><h3>University of Saskatchewan</h3>
+                            <p>Bachelor of Science in Computer Science</p>
+                            <ul>
+                                <li>Expected date of completion: 2027/2028</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>Publications</h3>
+                            <ul>
+                            <a href="http://www.jdso.org/volume20/number2/Oscaris_311_316.pdf" target="_blank">
+                                <li>Oscaris, Liam. ”Observation and Investigation of 5 Physical Doubles in the Washington Double Star Catalog.”
+Journal of Double Star Observations, vol. 20, no. 2, 2024, pp. 311-316</li>
+                            </a>
+                            </ul>
+                        </div>
+
+                        <div id="selected-info-p2">
+                            2023-Present
+                            <p>Saskatoon, SK</p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>Relevant coursework</h3>
+                            <ul>
+                                <li>Intermediate Data Structures and Algorithms</li>
+                                <li>Computer Organization and Architecture</li>
+                                <li>Programming Principles and Practice</li>
+                                <li>Website Design and Development</li>
+                                <li>Game Mechanics</li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience section -->
+            <div class="resume-section" id="experience">
+                <h2 id="selected-header experience">Experience</h2>
+                <div id="book-img">
+                    <div id="selected-info">
+                        <div id="selected-info-p1">
+                            <h3>Security Guard</h3>
+                            <p>FMG Saskatoon Dragon Boat Festival</p>
+                            <ul>
+                                <li>Improved overall security by conducting and following regular, scheduled patrols</li>
+                                <li>Prevented unauthorized access to event area and tampering of boats by enforcing strict entry protocols and verifying identification</li>
+                            </ul>
+                            <br>
+                            <h3>Meal Preparation Volunteer</h3>
+                            <p>SWITCH Clinic</p>
+                            <ul>
+                                <li>Assisted in preparation and distribution of 100+ total meals to individuals in need</li>
+                                <li>Operated independently in a fast-paced team environment to meet tight deadlines</li>
+                            </ul>
+                        </div>
+
+                        <div id="selected-info-p2">
+                            July 2022
+                            <p>Saskatoon, SK</p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            Dec. 2022
+                            <p>Saskatoon, SK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards section -->
+            <div class="resume-section" id="awards">
+                <h2 id="selected-header awards">Awards</h2>
+                <div id="book-img">
+                    <div id="selected-info">
+                        <div id="selected-info-p1">
+                            <h3>Saskatchewan Entrance Scholarship</h3>
+                            <ul>
+                                <li>Based on high school academic achievement</li>
+                            </ul>
+
+                            <br>
+                            <br>
+
+                            <h3>College of Arts and Science 2023/2024 Dean's Honour List</h3>
+                            <ul>
+                                <li>Based on grades ranking in the top 5% of students studying with full course loads</li>
+                            </ul>
+                        </div>
+
+                        <div id="selected-info-p2">
+                            2023
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            2023/2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills section -->
+            <div class="resume-section" id="skills">
+                <h2 id="selected-header skills">Skills</h2>
+                <div id="book-img">
+                    <div id="selected-info">
+                        <div id="selected-info-p1">
+                            Soft Skills:
+                            <ul>
+                                <li>Problem Solving</li>
+                                <li>Teamwork</li>
+                                <li>Adaptability</li>
+                                <li>Creativity</li>
+                                <li>Emotional Intelligence</li>
+                            </ul>
+                        </div>
+
+                        <div id="selected-info-p2">
+                            Technical Skills:
+                            <ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C</li>
+                                <li>HTML/CSS/JavaScript</li>
+                                <li>BASH</li>
+                            </ul>
+
+                            Developer Tools:
+                            <ul>
+                                <li>Git/GitHub</li>
+                                <li>Visual Studio Code</li>
+                                <li>PyCharm</li>
+                                <li>IntelliJ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="up-button" type="button" onclick="scrollUp()">
+            <div>
+                <img class="up-arrow" src="images/up-arrow.png" />
+            </div>
+        </button>
+
+        <p id="copyright">© 2025 Liam Oscaris</p>
+
+        <script src="main.js"></script>        
+    </body>
+</html>

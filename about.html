@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body id="about-body">
+        <!-- Navigation bar -->
+        <div class="navigation-bar">
+            <a href="index.html">
+                <button id="logo-button" type="button">
+                    <span>Liam Oscaris</span>
+                </button>
+            </a>
+
+            <div class="redirects">
+                <a href="index.html">
+                    <button class="redirect-button" type="button">
+                        <span>Home</span>
+                    </button>
+                </a>
+                
+                <a href="about.html">
+                    <button class="redirect-button selected" type="button">
+                        <span>About</span>
+                    </button>
+                </a>
+                
+                <a href="projects.html">
+                    <button class="redirect-button" type="button">
+                        <span>Projects</span>
+                    </button>
+                </a>
+
+                <a href="resume.html">
+                    <button class="redirect-button" type="button">
+                        <span>Resume</span>
+                    </button>
+                </a>
+                
+                <a href="contact.html" id="contact-button">
+                    <button class="redirect-button contact" type="button">
+                        <span>Contact</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        
+        <div id="about">
+            <!-- About section -->
+            <h1>About Me</h1>
+            <div id="about-me">
+                <img id="about-img" src="images/person.png" />
+                <div class="description">I am 20 years old and a third-year Computer Science student at the University of Saskatchewan. 
+                I was born in the Philippines and moved to Canada when I was 6 years old.
+                   I love automating tasks and solving real-world problems through technology.
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <!-- Hobbies and Interests section -->
+            <h1>Hobbies and Interests</h1>
+            <div id="hobbies-interests">
+                <img id="hobbies-img" src="images/hobbies.png" />
+                <div class="description">In my free time, I enjoy playing video games, reading, and hanging out with my friends.
+                   I love to travel and explore new places; one place I'd like to visit someday is Switzerland.
+                   Recently, I've gotten into watching sports, particularly basketball.
+                   I'm also interested in music and am currently learning to play the guitar.
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <!-- Computer Science section -->
+            <h1>Computer Science</h1>
+            <div id="computer-science">
+                <!-- Why I chose CS -->
+                <div class="cs-div" id="why">
+                    <h2>Why CS?</h2>
+                    <div class="description">My first exposure to Computer Science was when I opened Roblox Studio for the first time when I was around 10 years old.
+                       I realized how fun it was to break objectives down into steps and use code to automate and simplify tasks, and have been pursuing it ever since.
+                    </div>
+
+                </div>
+
+                <!-- Goals -->
+                <div class="cs-div" id="goals">
+                    <h2>Goals</h2>
+                    <div class="description">I would like to someday contribute to advancing technology even further, particularly in the fields of Artificial Intelligence and Quantum Computing.
+                       Currently, I am focusing on building up my skills by creating projects and seeking internship opportunities to gain real-world experience.
+                    </div>
+
+                </div>
+
+                <!-- Projects -->
+                <div class="cs-div" id="projects">
+                    <h2>Projects</h2>
+                    <div class="description">I like to build projects that have real use and practical applications, aiming to solve problems that I personally have experienced before but have not found solutions for elsewhere.
+                       I like to connect my projects to my interests, as it makes the development process more enjoyable and rewarding and I can approach problems as both a developer and a user.
+                    </div>
+            </div>
+        </div>
+
+        <!-- Scroll to top button -->
+        <button id="up-button" type="button" onclick="scrollUp()">
+            <div>
+                <img class="up-arrow" src="images/up-arrow.png" />
+            </div>
+        </button>
+
+        <p id="copyright">© 2025 Liam Oscaris</p>
+
+        <script src="main.js"></script>
+    </body>
+</html>

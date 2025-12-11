@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body id="contact-body">
+        <!-- Navigation bar -->
+        <div class="navigation-bar">
+            <a href="index.html">
+                <button id="logo-button" type="button">
+                    <span>Liam Oscaris</span>
+                </button>
+            </a>
+
+            <div class="redirects">
+                <a href="index.html">
+                    <button class="redirect-button" type="button">
+                        <span>Home</span>
+                    </button>
+                </a>
+                
+                <a href="about.html">
+                    <button class="redirect-button" type="button">
+                        <span>About</span>
+                    </button>
+                </a>
+                
+                <a href="projects.html">
+                    <button class="redirect-button" type="button">
+                        <span>Projects</span>
+                    </button>
+                </a>
+
+                <a href="resume.html">
+                    <button class="redirect-button" type="button">
+                        <span>Resume</span>
+                    </button>
+                </a>
+                
+                <a href="contact.html" id="contact-button">
+                    <button class="redirect-button contact" type="button">
+                        <span>Contact</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    
+        <div id="contact">
+            <h1>Contact</h1>
+
+            <div id="contact-main">
+                <!-- Contact links -->
+                <div id="contact-links">
+                    <div class="contact-info" id="linkedin" type=button>
+                        <img src="images/linkedin-logo.png">
+                        <a href="https://www.linkedin.com/in/l-osc/" target="_blank">
+                            <span>https://www.linkedin.com/in/l-osc/</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-info" id="github" type=button>
+                        <img src="images/github-logo.png">
+                        <a href="https://github.com/l-osc" target="_blank">
+                            <span>https://github.com/l-osc</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-info" id="phone">
+                        <img src="images/phone-icon.png" />
+                        <span>306-715-9130</span>
+                    </div>
+
+                    <div class="contact-info" id="discord">
+                        <img src="images/discord-logo.png" />
+                        <span>Discord username: @l-osc</span>
+                    </div>
+
+                    <div class="contact-info" id="email">
+                        <img src="images/email-icon.png" />
+                        <a href="mailto:liamoscaris@gmail.com">
+                            <span>liamoscaris@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact description -->
+                <div id="contact-description">
+                    <p>
+                        Feel free to reach out to me through any of these platforms.
+                        I'm always open to connecting with new people!
+                        I may not be able to respond immediately, but I will get back to you as soon as I can.
+                        Or, if you'd like, you can fill out the form below to quickly send me a message directly.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>Send me a message!</h2>
+
+            <!-- Message form -->
+            <div id="message">
+                <form name="contact" netlify>
+                    <!-- Main message input -->
+                    <div id="message-box">
+                        <textarea id="message-main" placeholder="*Questions/comments? Send me a message!"></textarea>
+                    </div>
+                    <div id="message-details">
+                        <!-- Name input -->
+                        <div class="message-info">
+                            <input type="text" id="sender-name" name="sender-name" placeholder="*Name"><br>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="message-info">
+                            <input type="email" id="sender-email" name="sender-email" placeholder="*Email"><br>
+                        </div>
+
+                        <!-- Phone number input -->
+                        <div class="message-info">
+                            <input type="number" id="sender-phone" name="sender-phone" placeholder="*Phone Number (optional)"><br>
+                        </div>
+
+                        <!-- Topic dropdown select -->
+                        <div class="message-info">
+                            <select id="topic" name="topic">
+                                <option value="">Select a Topic</option>
+                                <option value="casual">Casual</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="internship">Internship</option>
+                                <option value="work">Work</option>
+                                <option value="business">Business</option>
+                                <option value="bug-issue">Website Bug/Issue</option>
+                            </select>
+                        </div>
+
+                        <!-- Subject input -->
+                        <div class="message-info">
+                            <input type="text" id="subject" name="subject" placeholder="*Subject"><br>
+                        </div>
+
+                        <!-- Submit button -->
+                        <div class="message-info" id="message-submit">
+                            <button type="submit">
+                                <span>Submit</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Scroll to top button -->
+        <button id="up-button" type="button" onclick="scrollUp()">
+            <div>
+                <img class="up-arrow" src="images/up-arrow.png" />
+            </div>
+        </button>
+
+        <p id="copyright">© 2025 Liam Oscaris</p>
+
+        <script src="main.js"></script>
+    </body>
+</html>

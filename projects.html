@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body id="projects-body">
+        <div class="navigation-bar">
+            <a href="index.html">
+                <button id="logo-button" type="button">
+                    <span>Liam Oscaris</span>
+                </button>
+            </a>
+
+            <div class="redirects">
+                <a href="index.html">
+                    <button class="redirect-button" type="button">
+                        <span>Home</span>
+                    </button>
+                </a>
+                
+                <a href="about.html">
+                    <button class="redirect-button" type="button">
+                        <span>About</span>
+                    </button>
+                </a>
+                
+                <a href="projects.html">
+                    <button class="redirect-button selected-2" type="button">
+                        <span>Projects</span>
+                    </button>
+                </a>
+
+                <a href="resume.html">
+                    <button class="redirect-button" type="button">
+                        <span>Resume</span>
+                    </button>
+                </a>
+                
+                <a href="contact.html" id="contact-button">
+                    <button class="redirect-button contact" type="button">
+                        <span>Contact</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="projects">
+            <h1>Projects</h1>
+
+            <!-- Project filtering -->
+            <div id="filter">
+                <!-- Filter options -->
+                <div id="filter-container">
+                    <div id="filter-main">
+                        <h2>Filter by tag:</h2>
+                        <div id="filters">
+                            <!-- Filter template -->
+                            <div hidden class="filter-option" id="filter-template">
+                                <input type="checkbox" id="template" name="template" onclick="filterProjects(id)">
+                                <label for="template">Template (HIDDEN)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Open filters button -->
+                <button id="filter-button" type="button" onclick="showFilterOptions()">
+                    <span>Filter</span>
+                </button>
+            </div>
+
+            <!-- Project cards -->
+            <div id="cards">
+                <!-- Web scraping (dummy) project -->
+                <div class="project-card" id="webscraping-project">
+                    <h2>Shadow Tower</h2>
+                    <div class="project-body">
+                        <a href="https://l-osc.itch.io/shadow-tower" target="_blank">
+                            <img class="project-img" src="https://img.itch.zone/aW1nLzI0NDE3NDIzLnBuZw==/315x250%23c/2ux0Bb.png" />
+                        </a>
+                        <div class="project-description">
+                            <ul class="project-tags">
+                                <li>Godot</li>
+                                <li>Web</li>
+                            </ul>
+                            <p>A Vampire Survivors-inspired web game.</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>      
+        </div>   
+
+        <!-- Scroll to top button -->
+        <button id="up-button" type="button" onclick="scrollUp()">
+            <div>
+                <img class="up-arrow" src="images/up-arrow.png" />
+            </div>
+        </button>
+
+        <p id="copyright">© 2025 Liam Oscaris</p>
+
+        <script src="main.js"></script>
+    </body>
+</html>

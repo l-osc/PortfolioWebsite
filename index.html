@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body id ="home-body">
+        <!-- Navigation bar -->
+        <div class="navigation-bar">
+            <a href="index.html">
+                <button id="logo-button" type="button">
+                    <span>Liam Oscaris</span>
+                </button>
+            </a>
+
+            <div class="redirects">
+                <a href="index.html">
+                    <button class="redirect-button selected" type="button">
+                        <span>Home</span>
+                    </button>
+                </a>
+                
+                <a href="about.html">
+                    <button class="redirect-button" type="button">
+                        <span>About</span>
+                    </button>
+                </a>
+                
+                <a href="projects.html">
+                    <button class="redirect-button" type="button">
+                        <span>Projects</span>
+                    </button>
+                </a>
+
+                <a href="resume.html">
+                    <button class="redirect-button" type="button">
+                        <span>Resume</span>
+                    </button>
+                </a>
+                
+                <a href="contact.html" id="contact-button">
+                    <button class="redirect-button contact" type="button">
+                        <span>Contact</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="home">
+            <!-- Intro section with name, current position, and contact button -->
+            <div id="intro">
+                <h1>Liam Oscaris</h1>
+                <h2>Computer Science Student at the University of Saskatchewan</h2>
+                <a href="contact.html">
+                    <button type="button">
+                        <span>Contact</span>
+                    </button>
+                </a>
+            </div>
+            
+            <!-- About and Skills panels -->
+            <div id="about-and-skills-panel">
+                <!-- About panel -->
+                <div id="about-panel">
+                    <h3>About</h3>
+                    <div>
+                        I am 20 years old and am currently in my third year of my Computer Science degree. I have a passion for programming and creating tools and software that improve others' quality of life.
+                        <br>
+                        <br>
+                        In the future, I would like to make contributions to the fields of Artificial Intelligence and Quantum Computing.
+                        <br>
+                        <br>
+                        I am currently looking for internship and collaboration opportunities. If you would like to connect, please feel free to send me a message!
+                    </div>
+                </div>
+
+                <!-- Skills panel -->
+                <div id="skills-panel">
+                    <h3>Skills</h3>
+                    <!-- Programming languages -->
+                    <div id="programming-languages">
+                        <img id="python" src="images/python-logo.png" />
+                        <img id="java" src="images/java-logo.png" />
+                        <img id="c" src="images/c-logo.png" />
+                        <img id="html" src="images/html-logo.png" />
+                        <img id="css" src="images/css-logo.png" />
+                        <img id="js" src="images/js-logo.png" />
+                    </div>
+                    <h4>Programming</h4>
+
+                    <!-- Programming tools -->
+                    <div id="programming-tools">
+                        <img id="vscode" src="images/vs-code.png" />
+                        <img id="github" src="images/github-logo.png" />
+                        <img id="git" src="images/git-logo.png" />
+                        <img id="pycharm" src="images/pycharm-logo.png" />
+                        <img id="intellij" src="images/intellij-logo.png" />
+                        <img id="figma" src="images/figma-logo.png" />
+                    </div>
+                    <h4>Tools</h4>
+                </div>
+            </div>
+
+            <!-- Contact panel -->
+            <div id="contact-panel">
+                <h3>Contact</h3>
+                <div id="contact-buttons">
+                    <a href="https://www.linkedin.com/in/l-osc/" target="_blank" rel="noopener noreferrer">
+                        <button id="linkedin" type="button">
+                            <div>
+                                <img class="linkedin-logo" src="images/linkedin-logo.png" />
+                                <span>l-osc</span>
+                            </div>
+                        </button>
+                   </a>
+                   
+                    <a href="mailto:liamoscaris@gmail.com">
+                        <button id="email" type="button">
+                            <div>
+                                <img class="email-logo" src="images/email.png" />
+                                <span>liamoscaris@gmail.com</span>
+                            </div>
+                        </button>
+                    </a>
+
+                    <a href="https://discord.com/users/1007519489543376967">
+                        <button id="discord" type="button">
+                            <div>
+                                <img class="discord-logo" src="images/discord-logo.png" />
+                                <span>@l_osc</span>
+                            </div>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll to top button -->
+            <button id="up-button" type="button" onclick="scrollUp()">
+                <div>
+                    <img class="up-arrow" src="images/up-arrow.png" />
+                </div>
+            </button>
+
+            <p id="copyright">© 2025 Liam Oscaris</p>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

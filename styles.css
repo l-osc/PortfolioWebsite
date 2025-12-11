@@ -1,0 +1,940 @@
+:root {
+    --color1: #bca4a4e9;
+    --color2: #e2e2e2f3;
+    --buttonhovercolor: #b1b1b1
+}
+
+/* Body background and font */
+body {
+    background: linear-gradient(
+    180deg,
+    rgba(36, 47, 66, 1) 0%,
+    rgba(92, 120, 168, 1) 100%
+    );
+    position: relative;
+    font-family: "Inter-Regular", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------- COMMON ELEMENTS -------------------- */
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Main header at the top of each page */
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color: #ffffff;
+    font-size: 4em;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    font-weight: 400;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+/* Navigation bar panel */
+.navigation-bar {
+    background: rgba(108, 106, 106, 0.38);
+    border-radius: 3.125em;
+    padding: 1.3em 1.95em 1.3em 1.95em;
+    display: flex;
+    flex-direction: row;
+    gap: 12.5em;
+    align-items: center;
+    justify-content: flex-start;
+    width: 77.5em;
+    height: 4em;
+    margin-top: 0.9em;
+}
+
+/* Redirects panel at the top */
+.redirects {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+/* Font and size for redirect button texts */
+.redirects span {
+    color: #ffffff;
+    text-align: left;
+    font-size: 1.875em;
+    position: relative;
+}
+
+/* Underline when hovering over a navigation bar button */
+.redirects a :not(#contact-button span):hover {
+    text-decoration: underline;
+}
+
+/* Navigation bar contact button hover effect */
+.redirects #contact-button button:hover {
+    text-decoration: none;
+    background-color: #938181;
+}
+
+/* Gradient color for text logo */
+#logo-button span {
+    background-image: linear-gradient( 180deg,
+    rgba(188, 164, 164, 1) 51%,
+    rgba(255, 255, 255, 1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 2.25em;
+}
+
+/* Background for navigation bar contact button */
+.redirect-button.contact {
+    background: var(--color1);
+    border-radius: 2.5em;
+    padding: 1em 1.3125em 1em 1.3125em;
+    width: 9.75em;
+    height: 4.375em;
+}
+
+/* Background for current page's button on navigation bar */
+.redirect-button.selected, .redirect-button.selected-2 {
+    background: rgba(143, 143, 143, 0.32);
+    border-radius: 0.625em;
+    padding: 0.25em 0.9375em 0.25em 0.9375em;
+    width: 7.125em;
+    height: 2.875em;
+}
+
+/* Wider width for longer navigation bar button names */
+.redirect-button.selected-2 {
+  width: 9.125em;
+}
+
+
+/* -------------------- HOME PAGE -------------------- */
+
+#home-body {
+    height: 130em;
+}
+
+#home #intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    margin-top: 10em;
+}
+
+#home h1, #home h2 {
+    color: #ffffff;
+    margin-bottom: 0em;
+    font-weight: 400;
+}
+
+#home #intro h1 {
+    font-size: 4em;
+}
+
+#home #intro h2 {
+    margin-top: 0.5em;
+    font-size: 1.875em;
+}
+
+#home #intro button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625em;
+
+    background: var(--color1);
+    border-radius: 2.5em;
+    padding: 0.75em 2.7em 0.75em 2.7em;
+    width: 6em;
+    height: 2em;
+
+    margin-top: 1.2em;
+    color: black;
+    font-size: 3.125em;
+}
+
+#home #intro button:hover {
+    background: #938181;
+}
+
+/* Panel titles */
+#home [id$="panel"] h3 {
+    font-size: 1.9em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+#home #about-and-skills-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+
+    position: relative;
+    margin-top: 20em;
+}
+
+/* About and Skills panels */
+#home #about-panel, #home #skills-panel {
+    background: var(--color1);
+    border-radius: 1.25em;
+    padding: 0.94em 1.31em 0.94em 1.31em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 36em;
+    height: 46.25em;
+}
+
+/* About panel inner */
+#home #about-panel div {
+    background: var(--color2);
+    border-radius: 1.25em;
+    padding: 0.625em 0.875em 0.625em 0.875em;
+    position: relative;
+
+    font-size: 1.9em;
+    position: static;
+    height: 20.75em;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+/* Skills panel subheaders */
+#home #skills-panel h4 {
+    font-size: 2em;
+    font-weight: 500;
+
+    margin-bottom: 1.25em;
+    margin-top: 0.5em;
+}
+
+/* Programming languages inner frame */
+#home #programming-languages {
+    background: var(--color2);
+    border-radius: 2.5em;
+    padding: 0.0625em 1.2em 0.0625em 1.2em;
+    gap: 3.55em;
+    row-gap: 1.875em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;    
+    flex-shrink: 0;
+
+    width: 29.5em;
+    height: 15.375em;
+    position: relative;
+}
+
+/* Programming tools inner frame */
+#home #programming-tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    
+    background: var(--color2);
+    border-radius: 2.5em;
+    padding: 0.75em 1.625em 0.75em 1.625em;
+    gap: 2.625em;
+    row-gap: 1.875em;
+
+    width: 29.5em;
+    height: 15.375em;
+    position: relative;
+}
+
+/* Contact panel */
+#home #contact-panel {
+    background: var(--color1);
+    border-radius: 1.25em;
+    padding: 0.625em 0em 1em 0em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    margin-top: 3em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+/* Contact buttons */
+#home #contact-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.3125em;
+    position: relative;
+    margin:0em;
+
+    gap: 8em;
+}
+
+#home #contact-buttons div {
+    background: var(--color2);
+    padding: 0.5em 1em 0.5em 1em;
+    max-height: 1.75em;
+    border-radius: 0.3125em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+
+    font-size: 1.875em;
+}
+
+/* Modified padding for email button in Contacts panel */
+#home #email {
+    padding: -0em 0em 0em -0.5em;
+}
+
+
+/* -------------------- ABOUT PAGE -------------------- */
+
+#about-body {
+    height: 120em;
+}
+
+#about h1 {
+    margin-bottom: 0.5em;
+}
+
+/* Horizontal rule */
+#about hr {
+    width: 80em;
+    border: 0.125em solid #ffffff; 
+    border-radius: 5em;
+    margin-top: 5.5em;
+    margin-bottom: 5.5em;
+}
+
+/* Descriptions */
+#about .description {
+    font-size: 1.5em;
+    padding: 0.625em;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+    background-color: var(--color2);
+    border-radius: 1.25em;
+
+    max-width: 42.5em;
+}
+
+/* Images */
+#about [id$="img"] {
+    margin-left: 2em;
+    width:6em;
+    height:6em;
+}
+
+/* Formatting 'About Me' and 'Hobbies and Interests' sections */
+#about #about-me, #about #hobbies-interests {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 6em;
+    background-color: var(--color1);
+    padding: 1.25em 2.5em 1.25em 2.5em;
+    border-radius: 1.25em;
+    max-width: 80em;
+}
+
+/* Formatting 'Computer Science' section */
+#about #computer-science {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2em;
+}
+
+#about #computer-science h2 {
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+/* Formatting each subsection */
+#about #computer-science .cs-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6em;
+
+    background-color: var(--color1);
+    padding: 1.25em 2.5em 1.25em 2.5em;
+    border-radius: 1.25em;
+    width: 80em;
+}
+
+#about #computer-science #why {
+    gap: 3em;
+}
+
+#about #computer-science #projects {
+    gap: 3.8em;
+}
+
+
+/* -------------------- PROJECTS PAGE -------------------- */
+
+#projects-body {
+    height: 130em;
+}
+
+/* Filter section */
+#projects #filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    margin-bottom: 2em;
+    margin-right: 4em;
+}
+
+/* Filter main container */
+#projects #filter-container {
+    position: absolute;
+}
+
+/* Filter selection panel */
+#projects #filter-main {
+    visibility: hidden;
+    
+    position: relative;
+    right: 9em;
+    top: 2em;
+    background-color: var(--color2);
+    border-radius: 1.25em;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    width: 15em;
+    height: auto;
+    z-index: 1;
+}
+
+#projects #filter-main h2 {
+    margin-top: 0em;
+}
+
+/* Grid layout for each filter in the panel */
+#projects #filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+/* Filter option scaling */
+#projects .filter-option {
+    scale: 1.25;
+}
+
+/* Filter button positioning */
+#projects #filter-button {
+    position: relative;
+    top: 0em;
+    margin-top: 2.5em;
+    height: 2.5em;
+    z-index: 1;
+}
+
+/* Filter button styling */
+#projects button {
+    background-color: var(--color2);
+    border-radius: 1.25em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-size: 1.5em;
+}
+
+/* Filter button hover effect */
+#projects button:hover {
+    background-color: var(--buttonhovercolor);
+}
+
+/* Layout for project cards*/
+#projects #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 3em;
+    justify-content: center;
+    margin-left: 2.5em;
+    margin-right: 2.5em;;
+}
+
+/* Layout within each project card*/
+#projects .project-card {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25em;
+    height: 30em;
+    border-radius: 1.25em;
+}
+
+/* Hover effect for project cards */
+#projects .project-card:hover {
+    transform: scale(1.1);
+}
+
+/* Inner frame for project cards */
+#projects .project-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 1.5em 1em 1.5em;
+    background-color: var(--color2);
+    width: 20.5em;
+    height: 22.5em;
+    border-radius: 1.25em;
+}
+
+/* Project images */
+#projects .project-img {
+    object-fit: cover;
+    width: 22.5em;
+    border-radius: 1.25em;
+    height: 15em;
+}
+
+#projects .project-description {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
+
+/* Layout for project tags*/
+#projects .project-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+
+    gap: 0.5em;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    margin-left: 0em;
+    padding: 0em;
+}
+
+/* Styling for each project tag */
+#projects .project-tags li {
+    background-color: var(--color1);
+    border-radius: 0.625em;
+    padding: 0.25em 0.75em 0.25em 0.75em;
+    font-size: 0.9em;
+}
+
+
+/* -------------------- RESUME PAGE -------------------- */
+
+#resume-body {
+    height: 110em;
+}
+
+#resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Download resume and close book buttons */
+#resume #download, #resume #close-book {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+
+    width: 80em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+/* Styling for download resume and close book buttons */
+#resume #download button, #resume #close-book button {
+    background-color: var(--color2);
+    border-radius: 1.25em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-size: 1.5em;
+}
+
+/* Positioning and visibility for close book button */
+#resume #close-book {
+    visibility: hidden;
+    position: relative;
+    top: 12em;
+    right: 3.5em;
+    z-index: 1;
+}
+
+/* Hover effect for download resume and close book buttons */
+#resume #download button:hover, #resume #close-book button:hover {
+    background-color: var(--buttonhovercolor);
+}
+
+/* Resume shelf outer frame*/
+#resume #resume-shelf {
+    background-color: rgb(111, 74, 51);
+    width: 50em;
+    height: 20em;
+    border-radius: 0.625em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Resume shelf inner frame */
+#resume #resume-inner {
+    background-color: rgb(76, 52, 31);
+    width: 48em;
+    height: 18em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4em;
+}
+
+/* Styling for each resume section book */
+#resume .resume-section-book {
+    background-color: var(--color2);
+    height: 17.5em;
+    width: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5em;
+}
+
+/* Hover effect for resume section books */
+#resume .resume-section-book:hover {
+    background-color: var(--buttonhovercolor);
+}
+
+/* Rotate text on resume section books */
+#resume .resume-section-book span {
+    transform: rotate(-90deg);
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+/* Resume section title */
+#resume h2 {
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 400;
+    margin-top: 2em;
+    margin-bottom: 0em;
+}
+
+/* Hiding each resume section at the start */
+#resume .resume-section {
+    display: none;
+}
+
+/* Positioning and styling for all resume sections */
+#resume .resume-section {
+    position: absolute;
+    top: 45em;
+}
+
+/* Sizing of book image for all resume sections */
+#resume #book-img {
+    background-image: url("images/book.png");
+    background-size: cover;
+    width: 80em;
+    height: 45em;
+}
+
+/* Selected resume section content layout */
+#resume #selected-info {
+    font-size: 1.5em;
+    padding: 4em;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;;
+    justify-content: left;
+    gap: 1.5em;
+
+    list-style-position: inside;
+}
+
+/* Sizing for page 1 */
+#resume #selected-info-p1 {
+    width: 22.5em;
+    height: 25.5em;
+}
+
+/* Sizing and alignment for page 2 */
+#resume #selected-info-p2 {
+    width: 22.5em;
+    height: 25.5em;
+
+    text-align: right;
+}
+
+/* Italicizing <p> elements */
+#resume #selected-info p {
+    font-style: italic;
+}
+
+/* Boldening <h3> elements */
+#resume #selected-info h3 {
+    font-size: 1.15em;
+    margin: 0em;
+    font-weight: 600;
+}
+
+/* Link colors */
+#resume a {
+    color: black;
+}
+
+
+/* -------------------- CONTACT PAGE -------------------- */
+
+#contact-body {
+    height: 110em;
+}
+
+/* Layout of main container */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for horizontal rule */
+#contact hr {
+    width: 80em;
+    border: 0.125em solid #ffffff; 
+    border-radius: 5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+/* 'Contact' section */
+#contact-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+
+    margin-top: 3em;
+}
+
+/* Layout for contact links and description */
+#contact #contact-links, #contact #contact-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    background-color: var(--color1);
+    padding: 1.5em 1em 1em 1em;
+    border-radius: 1.25em;
+    width: 35em;
+    height: 28em;
+}
+
+/* Styling for contact description paragraph */
+#contact #contact-description p {
+    background-color: var(--color2);
+    padding: 1em;
+    font-size: 1.5em;
+    border-radius: 0.625em;
+    height: 17.5em;
+}
+
+/* Layout for each contact link */
+#contact .contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+
+    background-color: var(--color2);
+    border-radius: 0.625em;
+    width: 30em;
+    padding: 0.35em 1em 0.35em 1em;
+}
+
+/* Font size for contact info text */
+#contact .contact-info span {
+    font-size: 1.5em;
+}
+
+#contact img {
+    width: 4em;
+    height: 4em;
+}
+
+#contact a {
+    color: black;
+}
+
+
+/* "Send me a message" section header */
+#contact h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #ffffff;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 3.5em;
+    font-weight: 400;
+}
+
+/* Styling for message sending panel */
+#contact #message {
+    background-color: var(--color1);
+    border-radius: 1.25em;
+    padding: 1.5em 1em 1em 1em;
+    margin-top: 2em;
+    width: 75em;
+    height: 30em;
+}
+
+/* Layout for message sending form */
+#contact #message form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+/* Styling for message textarea */
+#contact textarea {
+    font-family: "Inter-Regular", sans-serif;
+    width: 30em;
+    height: 18.5em;
+    resize: none;
+    border-radius: 0.625em;
+    padding: 0.5em;
+    font-size: 1.5em;
+    border: none;
+}
+
+/* Layout for message details */
+#contact #message-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25em;
+}
+
+/* Styling for detail inputs */
+#contact #message-details input {
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 0.625em;
+    border: none;
+    width: 15em;
+}
+
+/* Styling for 'Select a Topic' */
+#contact #message-details select {
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 0.625em;
+    border: none;
+    width: 16em;
+}
+
+/* Styling for message submit button */
+#contact #message-details #message-submit {
+    background-color: var(--color2);
+    border-radius: 0.625em;
+    width: 13.5em;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.25em;
+    margin-top: 1em;
+}
+
+#contact #message-details #message-submit:hover {
+    background-color: var(--buttonhovercolor);
+}
+
+/* -------------------- COMMON LOWER ELEMENTS -------------------- */
+
+/* Positioning of scroll to top button*/
+#up-button {
+    visibility: hidden;
+    position: fixed;
+    right: 2em;
+    bottom: 1em;
+}
+
+/* Styling for scroll to top button container */
+#up-button div {
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 100%;
+    flex-shrink: 0;
+    width: 7.625em;
+    height: 7.125em;
+}
+
+
+/* Styling for copyright text at the bottom of each page */
+#copyright {
+    color: #ffffff;
+    margin-top: 5em;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0.5em;
+
+    /* Centering horizontally */
+    left: 50%;
+    transform: translateX(-50%);
+}
