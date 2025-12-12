@@ -336,7 +336,7 @@ button {
 /* -------------------- ABOUT PAGE -------------------- */
 
 #about-body {
-    height: 117.5em;
+    height: 115em;
 }
 
 #about h1 {
@@ -349,8 +349,8 @@ button {
     width: 80em;
     border: 0.125em solid #ffffff; 
     border-radius: 5em;
-    margin-top: 5.5em;
-    margin-bottom: 5.5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
 
     transform: scale(var(--transformScale));
 }

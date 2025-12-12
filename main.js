@@ -168,8 +168,8 @@ function checkScroll() {
   const scrollPosition = window.scrollY || document.documentElement.scrollTop;
   const viewportHeight = window.innerHeight;
 
-  // Show the button if the user has scrolled more than one viewport height
-  if (scrollPosition > viewportHeight) {
+  // Show the button if the user has scrolled more than 1/2 the viewport height
+  if (scrollPosition > viewportHeight/2) {
     scrollUpButton.style.visibility = "visible";
   } else {
     scrollUpButton.style.visibility = "hidden";
