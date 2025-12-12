@@ -716,6 +716,11 @@ button {
     text-align: right;
 }
 
+#resume #projects #selected-info-p2 {
+    margin-left: 1em;
+    text-align: left;
+}
+
 /* Italicizing <p> elements */
 #resume #selected-info p {
     font-style: italic;
