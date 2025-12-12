@@ -1,7 +1,8 @@
 :root {
     --color1: #bca4a4e9;
     --color2: #e2e2e2f3;
-    --buttonhovercolor: #b1b1b1
+    --buttonhovercolor: #b1b1b1;
+    --transformScale: 0.75;
 }
 
 /* Body background and font */
@@ -58,7 +59,9 @@ button {
     justify-content: flex-start;
     width: 77.5em;
     height: 4em;
-    margin-top: 0.9em;
+    margin-top: 0em;
+
+    transform: scale(var(--transformScale));
 }
 
 /* Redirects panel at the top */
@@ -131,7 +134,7 @@ button {
 /* -------------------- HOME PAGE -------------------- */
 
 #home-body {
-    height: 130em;
+    height: 115em;
 }
 
 #home #intro {
@@ -139,7 +142,9 @@ button {
     flex-direction: column;
     align-items: center;
   
-    margin-top: 10em;
+    margin-top: 7.5em;
+
+    transform: scale(var(--transformScale));
 }
 
 #home h1, #home h2 {
@@ -193,7 +198,9 @@ button {
     gap: 3em;
 
     position: relative;
-    margin-top: 20em;
+    margin-top: 15em;
+
+    transform: scale(var(--transformScale));
 }
 
 /* About and Skills panels */
@@ -285,9 +292,11 @@ button {
     align-items: center;
 
     position: relative;
-    margin-top: 3em;
+    margin-top: -5em;
     margin-left: 0.4em;
     margin-right: 0.4em;
+
+    transform: scale(var(--transformScale));
 }
 
 /* Contact buttons */
@@ -327,11 +336,12 @@ button {
 /* -------------------- ABOUT PAGE -------------------- */
 
 #about-body {
-    height: 120em;
+    height: 117.5em;
 }
 
 #about h1 {
     margin-bottom: 0.5em;
+    transform: scale(var(--transformScale));
 }
 
 /* Horizontal rule */
@@ -341,6 +351,8 @@ button {
     border-radius: 5em;
     margin-top: 5.5em;
     margin-bottom: 5.5em;
+
+    transform: scale(var(--transformScale));
 }
 
 /* Descriptions */
@@ -375,6 +387,8 @@ button {
     padding: 1.25em 2.5em 1.25em 2.5em;
     border-radius: 1.25em;
     max-width: 80em;
+
+    transform: scale(var(--transformScale));
 }
 
 /* Formatting 'Computer Science' section */
@@ -402,6 +416,8 @@ button {
     padding: 1.25em 2.5em 1.25em 2.5em;
     border-radius: 1.25em;
     width: 80em;
+
+    transform: scale(var(--transformScale));
 }
 
 #about #computer-science #why {
@@ -416,7 +432,15 @@ button {
 /* -------------------- PROJECTS PAGE -------------------- */
 
 #projects-body {
-    height: 130em;
+    height: 120em;
+}
+
+#projects {
+    transform: scale(var(--transformScale));
+}
+
+#projects h1 {
+    margin-top: -0.25em;
 }
 
 /* Filter section */
@@ -565,7 +589,7 @@ button {
 /* -------------------- RESUME PAGE -------------------- */
 
 #resume-body {
-    height: 110em;
+    height: 95em;
 }
 
 #resume {
@@ -573,6 +597,12 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    transform: scale(var(--transformScale));
+}
+
+#resume h1 {
+    margin-top: 0em;
 }
 
 /* Download resume and close book buttons */
@@ -599,7 +629,7 @@ button {
 #resume #close-book {
     visibility: hidden;
     position: relative;
-    top: 12em;
+    top: 12.25em;
     right: 3.5em;
     z-index: 1;
 }
@@ -662,7 +692,7 @@ button {
     color: #ffffff;
     font-size: 4em;
     font-weight: 400;
-    margin-top: 2em;
+    margin-top: -1em;
     margin-bottom: 0em;
 }
 
@@ -700,6 +730,8 @@ button {
     gap: 1.5em;
 
     list-style-position: inside;
+
+    margin-top: 0em;
 }
 
 /* Sizing for page 1 */
@@ -742,7 +774,7 @@ button {
 /* -------------------- CONTACT PAGE -------------------- */
 
 #contact-body {
-    height: 110em;
+    height: 95em;
 }
 
 /* Layout of main container */
@@ -750,6 +782,12 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    transform: scale(var(--transformScale));
+}
+
+#contact h1 {
+    margin-top: -1.75em;
 }
 
 /* Styling for horizontal rule */
@@ -757,8 +795,8 @@ button {
     width: 80em;
     border: 0.125em solid #ffffff; 
     border-radius: 5em;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 7.5em;
+    margin-bottom: 7.5em;
 }
 
 /* 'Contact' section */

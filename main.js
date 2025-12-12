@@ -91,8 +91,6 @@ let sections = document.getElementsByClassName("resume-section");
 
 /* Opens the selected resume section book */
 function openSection(sectionId) {
-  /*books.namedItem(sectionId).classList.add("selected");
-  sections.namedItem(sectionId).classList.add("opened");*/
   books.namedItem(sectionId).style.visibility = "hidden";
   sections.namedItem(sectionId).style.display = "block";
 
