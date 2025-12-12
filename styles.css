@@ -893,7 +893,7 @@ button {
 }
 
 /* Styling for message submit button */
-#contact #message-details #message-submit {
+#contact #message-details #message-submit button {
     background-color: var(--color2);
     border-radius: 0.625em;
     width: 13.5em;
@@ -904,7 +904,7 @@ button {
     margin-top: 1em;
 }
 
-#contact #message-details #message-submit:hover {
+#contact #message-details #message-submit button:hover {
     background-color: var(--buttonhovercolor);
 }
 
